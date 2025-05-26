@@ -13,13 +13,13 @@ export default function Home() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
-            <Image
+            {/* <Image
               src="/placeholder.svg?key=cdv8d"
               alt="Chopmoney 360 Logo"
               width={40}
               height={40}
               className="rounded-md"
-            />
+            /> */}
             <span className="text-xl font-bold">Chopmoney 360</span>
           </div>
           <nav className="hidden md:flex items-center gap-6">
@@ -85,10 +85,10 @@ function HeroSection() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+                <Button size="lg" className="bg-blue-600 hover:bg-blue-700" onClick={()=> window.location.href = "#products"}>
                   Explore Our Products
                 </Button>
-                <Button size="lg" variant="outline">
+                <Button size="lg" variant="outline" onClick={()=> window.location.href = "#about"}>
                   About Chopmoney360
                 </Button>
               </div>
@@ -376,13 +376,13 @@ function TestimonialCard({ name, role, quote, avatar, delay = 0 }) {
     <AnimatedSection delay={delay}>
       <div className="flex flex-col items-start rounded-lg border bg-card p-6 shadow-sm h-full">
         <div className="mb-4 flex items-center space-x-4">
-          <Image
+          {/* <Image
             src={`/abstract-geometric-shapes.png?height=48&width=48&query=${avatar}`}
             alt={name}
             width={48}
             height={48}
             className="rounded-full"
-          />
+          /> */}
           <div>
             <h3 className="font-bold">{name}</h3>
             <p className="text-sm text-muted-foreground">{role}</p>
@@ -401,13 +401,13 @@ function Footer() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <Image
+              {/* <Image
                 src="/placeholder.svg?key=ck4ei"
                 alt="Chopmoney 360 Logo"
                 width={40}
                 height={40}
                 className="rounded-md"
-              />
+              /> */}
               <span className="text-xl font-bold">Chopmoney360</span>
             </div>
             <p className="text-sm text-muted-foreground">
@@ -425,7 +425,7 @@ function Footer() {
               <li>
                 <Link href="#" className="text-muted-foreground hover:text-foreground">
                   Support
-                </Link>Npm 
+                </Link>
               </li>
               <li>
                 <Link href="#" className="text-muted-foreground hover:text-foreground">
