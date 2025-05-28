@@ -463,8 +463,8 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/terms-of-service" className="text-muted-foreground hover:text-foreground">
-                  Terms of Service
+                <Link href="/term-of-use" className="text-muted-foreground hover:text-foreground">
+                  Term of Use
                 </Link>
               </li>
             </ul>
