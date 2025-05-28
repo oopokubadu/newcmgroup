@@ -41,7 +41,7 @@ export default function Home() {
           </nav>
           <div className="flex items-center gap-4">
             <ThemeToggle />
-            <Button className="hidden md:flex">Get the App</Button>
+            <Button className="hidden md:flex" onClick={() => window.location.href ="https://app.chopmoney.co/"}>Get the App</Button>
             <MobileNav />
           </div>
         </div>
@@ -438,17 +438,17 @@ function Footer() {
             <h3 className="mb-4 text-sm font-semibold">Our Solutions</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-foreground">
+                <Link href="https://app.chopmoney.co/" className="text-muted-foreground hover:text-foreground">
                   Chopmoney App
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-foreground">
+                <Link href="https://gsemonitor.chopmoney.co/" className="text-muted-foreground hover:text-foreground">
                   GSE Monitor
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-foreground">
+                <Link href="https://cotview.chopmoney.co/" className="text-muted-foreground hover:text-foreground">
                   COT View
                 </Link>
               </li>
