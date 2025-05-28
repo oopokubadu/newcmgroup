@@ -41,7 +41,7 @@ export default function Home() {
           </nav>
           <div className="flex items-center gap-4">
             <ThemeToggle />
-            <Button className="hidden md:flex" onClick={() => window.location.href ="https://app.chopmoney.co/"}>Get the App</Button>
+            <Button className="hidden md:flex" onClick={() => window.location.href ="https://onelink.to/gx8jhf" }>Get the App</Button>
             <MobileNav />
           </div>
         </div>
@@ -254,7 +254,7 @@ function ProductCard({ title, description, icon, delay = 0, link }) {
         {/* Icon removed */}
         <h3 className="mb-2 text-xl font-bold">{title}</h3>
         <p className="mb-4 text-muted-foreground">{description}</p>
-        <Button variant="outline" className="mt-auto" size="sm" onClick={() => window.location.href = link }>
+        <Button variant="outline" className="mt-auto" size="sm" onClick={() => window.open(link, "_blank") }>
           Learn More <ChevronRight className="ml-1 h-4 w-4" />
         </Button>
       </div>
@@ -422,11 +422,7 @@ function Footer() {
                   About Us
                 </Link>
               </li>
-              <li>
-                <Link href="#" className="text-muted-foreground hover:text-foreground">
-                  Support
-                </Link>
-              </li>
+              
               <li>
                 <Link href="/contact-us" className="text-muted-foreground hover:text-foreground">
                   Contact
@@ -474,20 +470,7 @@ function Footer() {
           <p className="text-center text-sm text-muted-foreground md:text-left">
             © {new Date().getFullYear()} Chopmoney360. All rights reserved. Built in Africa. Designed for Progress.
           </p>
-          <div className="flex items-center gap-4">
-            <Link href="#" className="text-muted-foreground hover:text-foreground">
-              <Image src="/instagram-icon.png" alt="Instagram" width={20} height={20} />
-              <span className="sr-only">Instagram</span>
-            </Link>
-            <Link href="#" className="text-muted-foreground hover:text-foreground">
-              <Image src="/twitter-icon.png" alt="Twitter" width={20} height={20} />
-              <span className="sr-only">Twitter</span>
-            </Link>
-            <Link href="#" className="text-muted-foreground hover:text-foreground">
-              <Image src="/linkedin-icon.png" alt="LinkedIn" width={20} height={20} />
-              <span className="sr-only">LinkedIn</span>
-            </Link>
-          </div>
+          
         </div>
       </div>
     </footer>
