@@ -35,7 +35,7 @@ export default function Home() {
             <Link href="#testimonials" className="text-sm font-medium hover:text-primary">
               Testimonials
             </Link>
-            <Link href="#contact" className="text-sm font-medium hover:text-primary">
+            <Link href="/contact-us" className="text-sm font-medium hover:text-primary">
               Contact
             </Link>
           </nav>
@@ -428,7 +428,7 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-foreground">
+                <Link href="/contact-us" className="text-muted-foreground hover:text-foreground">
                   Contact
                 </Link>
               </li>
